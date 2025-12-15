@@ -26,4 +26,4 @@ you can type <code>pyinstaller --help</code> if you whant all the parameters
 Yes, it works !  
 
 ### Can i change the code ?
-Yes sure feel free to edit but if you post it, credit me.  
+Yes sure feel free to edit but if you post it, credit me or send me a mail.😉
