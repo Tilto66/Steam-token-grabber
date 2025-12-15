@@ -16,10 +16,10 @@ Very simple
 4 <code>pyinstaller --onefile --noconsole --icon=icone.ico graber.py</code>   
 
 ### What are the parameters of the last command ?
---onefile for the .exe format   
---noconsole so that there are no cmd   
---icon if you whant an icon     
-graber.py the file you want to compile    
+<code>--onefile</code> for the .exe format   
+<code>--noconsole</code> so that there are no cmd   
+<code>--icon</code> if you whant an icon     
+<code>graber.py</code> the file you want to compile    
 you can type <code>pyinstaller --help</code> if you whant all the parameters    
 
 ### Does it work on a machine that doesn't have Python ?
