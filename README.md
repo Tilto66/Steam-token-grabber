@@ -1,6 +1,10 @@
 # Steam-token-graber
 A steam token graber in python with ftp server
 
+> [!WARNING]  
+> With great power comes great responsibility, this repo is for educational purposes only.
+
+
 
 # Faq
 
