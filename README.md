@@ -17,11 +17,11 @@ Install python [here](https://www.python.org/downloads/)
 Or else run the Compile.bat
 
 ### What are the parameters of the last command ?
-<code>--onefile</code> to output only one .exe executable.
-<code>--noconsole</code> so that there are no console upon running.
-<code>--icon</code> if you want an icon.
-<code>graber.py</code> the file you want to compile
-you can type <code>pyinstaller --help</code> to display all the options. 
+<code>--onefile</code> to output only one .exe executable.  
+<code>--noconsole</code> so that there are no console upon running.  
+<code>--icon</code> if you want an icon.  
+<code>graber.py</code> the file you want to compile  
+you can type <code>pyinstaller --help</code> to display all the options.  
 
 ### Does it work on a machine that doesn't have Python ?
 Yes it does ! 
