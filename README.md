@@ -1,5 +1,6 @@
-# Steam-token-graber
-A steam token graber in python with ftp server
+# Steam "token-graber"
+A steam token wich can be use to stole steam token/account.   
+To understand how real hackers do that you need to hunderstand how they work.
 
 > [!WARNING]  
 > With great power comes great responsibility, this repo is for educational purposes only.
