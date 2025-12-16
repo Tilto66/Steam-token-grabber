@@ -1,4 +1,4 @@
-# Steam "token-graber"
+# Steam "token-grabber"
 A steam token which can be use to get a steam token/account.   
 
 > [!WARNING]  
