@@ -5,10 +5,6 @@ A steam token which can be use to get a steam token/account.
 > With great power comes great responsibility ! This program is for educational purposes only
 
 
-<a href="https://github.com/Tilto66/Steam-token-grabber/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Tilto66/Steam-token-grabber" />
-</a>
-
 
 # Faq
 
