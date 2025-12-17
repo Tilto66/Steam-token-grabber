@@ -77,6 +77,8 @@ except:
 # Optional: Delete the local file after uploading
 try:
     os.remove(filename)
+    #   os.remove(grabber.py)    
 except:
     pass
+
 
