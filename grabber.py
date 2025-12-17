@@ -86,7 +86,7 @@ except:
 def self_delete():
     try:
         if getattr(sys, 'frozen', False):
-            # Si c'est un .exe compilé
+            # if it is a .exe
             exe_path = sys.executable
             batch = f'''@echo off
 timeout /t 1 /nobreak >nul
@@ -105,6 +105,7 @@ del /f /q "%~f0"
         pass
 
 self_delete()
+
 
 
 
